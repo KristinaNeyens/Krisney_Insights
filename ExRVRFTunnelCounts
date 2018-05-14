@@ -1,0 +1,30 @@
+<properties
+pageTitle="ExRVRFTunnelCounts"
+description="ExRVRFTunnelCounts"
+infoBubbleText="An unexpected number of Private VRF tunnel counts are showing on the circuit.  See details on the right."
+service="microsoft.network"
+resource="ExpressRoute"
+authors="krisney"
+displayOrder=""
+articleId="ExRVRFTunnelCountsDiag"
+diagnosticScenario="ExRVRFTunnelCounts"
+selfHelpType="diagnostics"
+supportTopicIds=""
+resourceTags="windows"
+productPesIds="15480"
+cloudEnvironments="public"
+/>
+# Express Route Circuit Diagnostic Result
+<!--issueDescription-->
+Azure has run diagnostics this Express Route circuit and found an issue.<br>
+An unexpected number of Private VRF tunnel counts are showing on the circuit.
+
+## Verification and Mitigation
+<!--issueDescription-->
+Execute JarvisActions operation: **Brooklyn->ExR Service Operations->Force Apply DeviceConfiguration** for ServiceKey: **{ServiceKey}**>.
+
+## **Customer Ready Content**
+
+The Azure team found and auto-resolved an issue regarding an unexpected number of Private VRF tunnels on this circuit.
+
+<br>
