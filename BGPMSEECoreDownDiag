@@ -1,0 +1,19 @@
+<properties 
+    pageTitle="BGP Peering Between MSEE and Microsoft Core Router Is Down"
+    description="BGP Peering Between MSEE and Microsoft Core Router Is Down"
+    service="microsoft.network"
+    resource="ExpressRoute"
+    authors="krisney"
+    displayOrder=""
+    selfHelpType="diagnostics"
+    supportTopicIds=""
+    resourceTags="windows"
+    productPesIds=""
+    cloudEnvironments="public"
+ />
+ 
+# Microsoft Azure has identified an issue between the Microsoft Edge device and the Service Provider
+ 
+## **Recommended steps**
+We are actively working to resolve the issue and will update customers via portal notifications.
+ 
