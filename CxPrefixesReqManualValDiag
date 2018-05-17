@@ -1,1 +1,24 @@
-a
+<properties 
+    pageTitle="Customer Prefixes Require Manual Validation"
+    description="Customer Prefixes Require Manual Validation"
+    service="microsoft.network"
+    resource="ExpressRoute"
+    authors="krisney"
+    displayOrder=""
+    selfHelpType="diagnostics"
+    supportTopicIds=""
+    resourceTags="windows"
+    productPesIds="15480"
+    cloudEnvironments="public"
+ />
+ 
+# Microsoft Azure is unable to automatically validate your Public Prefix
+ 
+## Recommended steps
+This likely failed due to the **OriginAS** property being null at the registry. <br>
+To avoid this issue...(waiting for Hongwei)  <br>
+Selecting an ExpressRoute circuit listed under "All resources" will open the ExpressRoute circuit blade. <br> 
+In the "Overview" section of the blade, the ExpressRoute Essentials are shown.  <br>
+
+## Recommended document
+[ExpressRoute workflows for circuit provisioning and circuit states](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-workflows) <br>
