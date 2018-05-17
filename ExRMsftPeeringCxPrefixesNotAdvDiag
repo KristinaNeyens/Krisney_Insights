@@ -15,15 +15,14 @@
 # Microsoft Azure is unable to detect prefixes advertised from the customer edge
  
 ## Recommended steps
-We recommend to check the edge network device configuration and/or work with you service provider.
+We recommend to check your peering status: <br>
+In the Azure portal, status of an ExpressRoute circuit can be checked by selecting 2 on the left-side-bar menu and then selecting the <br>
+ExpressRoute circuit. Selecting an ExpressRoute circuit listed under "All resources" would open the ExpressRoute circuit blade. In the 3 <br>
+section of the blade, the ExpressRoute Essentials are shown, including Peerings.  <br>
+
+Using PowerShell <br>
+
+Get-AzureBGPPeering -AccessType Private -ServiceKey "*********************************" <br>
+Get-AzureBGPPeering -AccessType Public -ServiceKey "*********************************" <br>
+Get-AzureBGPPeering -AccessType Microsoft -ServiceKey "*********************************" <br>
  
-1. Review your VM's [console log or screenshot](data-blade:Microsoft_Azure_Classic_Compute.VirtualMachineSerialConsoleLogBlade) to correct boot problems. Review errors in logs such as FSTAB (file systems table), FSCK (file system consistency), or networking.
-2. [Reset password](data-blade:Microsoft_Azure_Classic_Compute.PasswordResetBlade) to address authentication errors
-3. Restart the virtual machine to address startup issues by clicking 'Restart' at the top of the VM resource blade
-4. Resize the VM to fix host issues by clicking 'Size' in the Settings blade of the VM resource
-5. Reset the SSH configuration to fix any SSH issues <br>
-[Reset SSH using CLI](https://azure.microsoft.com/documentation/articles/virtual-machines-linux-use-vmaccess-reset-password-or-ssh/#sshconfigresetcli)
- 
-## **Recommended documents**
-[Detailed troubleshooting of SSH errors](https://azure.microsoft.com/documentation/articles/virtual-machines-troubleshoot-ssh-connections/#detailed-troubleshooting-of-ssh-errors) <br>
-[Automate Linux VM Customization Tasks Using CustomScript Extension](https://azure.micros
