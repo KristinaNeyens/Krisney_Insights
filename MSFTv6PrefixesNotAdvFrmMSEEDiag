@@ -1,0 +1,23 @@
+<properties 
+    pageTitle="Microsoft Prefixes (IPv6) Are Not Advertised From The MSEE"
+    description="Microsoft Prefixes (IPv6) Are Not Advertised From The MSEE"
+    service="microsoft.network"
+    resource="ExpressRoute"
+    authors="krisney"
+    displayOrder=""
+    selfHelpType="diagnostics"
+    supportTopicIds=""
+    resourceTags="windows"
+    productPesIds="15480"
+    cloudEnvironments="public"
+ />
+ 
+# Microsoft IPv6 Peering Prefixes are not Advertised
+ 
+## Recommended steps
+This likely failed due missing route filters .... <br>
+To avoid this issue...(waiting for Hongwei)  <br>
+Check for the existence of appropriate route filters and ask the customer to create route filters for the...<br> 
+
+## Recommended document
+[Configure route filters for Microsoft Peering](https://docs.microsoft.com/en-us/azure/expressroute/how-to-routefilter-portal) <br>
