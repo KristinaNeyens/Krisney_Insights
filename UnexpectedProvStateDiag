@@ -16,22 +16,16 @@ cloudEnvironments="public"
 /> 
 # Express Route Circuit Diagnostic Result 
 <!--issueDescription--> 
-Azure has run diagnostics this Express Route circuit and found an issue.<br> 
+Azure has run diagnostics this Express Route circuit and found an issue 
 The circuit is in an Unexpected Provisioning State. 
 
-## Verification and Mitigation 
-<!--issueDescription--> 
-Verify the current circuit **Enabled** state and service provider **ProvisioningState** in **NRP** and in **Brooklyn** by viewing <br>
-the circuit properties in ASC for ServiceKey: **{ServiceKey}**
-You may need to involve the EEE group to place the circuit into a 'NotProvisioned' state for the ExR to be deleted.
+## The Azure team found the circuit in an Unexpected Provisioning State. Some of the items to check may be: <br> 
 
-## **Customer Ready Content** 
-The Azure team found the circuit in an Unexpected Provisioning State. Some of the items to check may be"
 1. The peer address is overlapped with the VNET address prefix
 2. There is a default route configured in the route table
 3. The NAT pool has no resources left
-4. Unlink all virtual networks from the Express Route circuit for the delete operation to succeed
-5. Circuit capacity issue/Not enough physical capacity on port pair
+4. A virtual network is still linked to the circuit; unlink all virtual networks from the Express Route circuit for the delete operation to succeed
+5. There is a circuit capacity issue/not enough physical capacity on port pair
 6. If the Express Route circuit service provider provisioning state is 'Provisioning' or 'Provisioned', you must work 
 with your service provider to deprovision the circuit on their side. Once the service provider has deprovisioned the circuit 
 (the service provider provisioning state is set to Not provisioned), you can delete the circuit. This stops billing for the circuit.
