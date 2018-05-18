@@ -15,9 +15,9 @@
 # Microsoft IPv6 Peering Prefixes are not Advertised
  
 ## Recommended steps
-This likely failed due missing route filters .... <br>
-To avoid this issue...(waiting for Hongwei)  <br>
-Check for the existence of appropriate route filters and ask the customer to create route filters for the...<br> 
+This is likely failing due to missing route filters <br>
+Please check for/create route filters that you wish to consume <br>
+Once route filters are created, prefixes should populate from the Microsoft edge to the your device.
 
 ## Recommended document
 [Configure route filters for Microsoft Peering](https://docs.microsoft.com/en-us/azure/expressroute/how-to-routefilter-portal) <br>
