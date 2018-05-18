@@ -16,9 +16,8 @@
  
 ## Recommended steps
 This likely failed due to the **OriginAS** property being null at the registry. <br>
-To avoid this issue...(waiting for Hongwei)  <br>
-Selecting an ExpressRoute circuit listed under "All resources" will open the ExpressRoute circuit blade. <br> 
-In the "Overview" section of the blade, the ExpressRoute Essentials are shown.  <br>
+To To avoid this issue in the future, please consider updating your Organization information at <br>
+the registry so the OriginAS is populated with an appropriate ASN
 
-## Recommended document
+## Recommended document - none yet
 [ExpressRoute workflows for circuit provisioning and circuit states](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-workflows) <br>
