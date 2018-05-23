@@ -12,12 +12,14 @@
     cloudEnvironments="public"
  />
  
-# Microsoft Azure is unable to automatically validate your Public Prefix
- 
-## Recommended steps
-This likely failed due to the **OriginAS** property being null at the registry. <br>
-To To avoid this issue in the future, please consider updating your Organization information at <br>
-the registry so the OriginAS is populated with an appropriate ASN
+# Microsoft Azure is unable to automatically validate your Public Prefix <br>
+Peering for ExpressRoute requires customer-supplied public prefixes are verified against a registrar, such as ARIN <br>
+This is a standard practice to verify identity and ownership of IP address space.
 
-## Recommended document - none yet
-[ExpressRoute workflows for circuit provisioning and circuit states](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-workflows) <br>
+## Recommended steps
+1.  This likely failed due to the **OriginAS** property being null at the registry. <br>
+2.  To avoid this issue in the future, please consider updating your Organization information at <br>
+the registry so the OriginAS is populated with an appropriate ASN <br>
+3.  Open a Service Request to show proof of ownership of the prefixes to our support team <br>
+## Recommended document
+[Create and modify peering for an ExpressRoute circuit](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-howto-routing-portal-resource-manager) <br>
