@@ -18,8 +18,9 @@ routers/switches that are necessary to create the network connection.  Border Ga
 provide routing information for the traffic.  When BGP peering between two endpoints is down, traffic is not able to transit the network path.
  
 ## Recommended steps
-We are actively working to resolve the issue and you can receive updates by subscribing to...<br>
-To view peering status please: <br>
-1. On the left pane choose Essentials <br>
-2. On the bottom left, View Peerings
+We are actively working to resolve the issue and you can receive updates by subscribing to Service Health Alerts per the following document <br>
+Or to view your peering status in the portal please navigate to: <br>
+1. On the left pane choose All Services <br>
+2. In the middle choose Express Route Circuits <br>
+3. Once the circuit is selected, you should see Peerings on the bottom left
  
